@@ -81,7 +81,8 @@ A structured prompt pipeline generating **brand-consistent, SEO-ready product co
   "features": ["...", "...", "...", "...", "..."],
   "meta_title": "...",
   "meta_description": "..."
-}```
+}
+```
 
 ## Run (from repo root)
 

@@ -95,3 +95,8 @@ python product_generator/cli.py --input product_generator/sample_products.json -
 python product_generator/cli.py --input product_generator/sample_products.json --lang EN
 ```
 
+## Module 3 — Automation Workflow Concept
+
+A practical **GenAI automation** concept: *New product → LLM copy (DE/EN) → Notion/CMS draft → Slack notify → human approval → publish + audit*.
+
+See: `automation_concept/workflow.md` and `automation_concept/architecture.png`

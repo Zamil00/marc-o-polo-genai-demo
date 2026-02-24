@@ -183,6 +183,15 @@ python3 main.py
 python3 product_generator/cli.py --input product_generator/sample_products.json --lang DE
 ```
 
+## Module 3 
+
+This module is a documented architecture concept.
+
+See:
+
+automation_concept/workflow.md
+
+automation_concept/architecture.png
 ---
 
 # 🎯 Positioning

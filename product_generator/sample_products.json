@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Organic Cotton Oxford Shirt",
+    "material": "100% organic cotton (oxford weave)",
+    "fit": "Regular fit",
+    "color": "Light blue",
+    "sustainability": "Organic cotton; designed for durability",
+    "additional_details": "Button-down collar, subtle embroidered logo, machine washable"
+  },
+  {
+    "name": "Merino Wool Knit Sweater",
+    "material": "100% merino wool",
+    "fit": "Relaxed fit",
+    "color": "Sand",
+    "sustainability": "",
+    "additional_details": "Soft handfeel, ribbed cuffs and hem; recommend gentle cold wash"
+  }
+]

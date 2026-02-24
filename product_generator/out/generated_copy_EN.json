@@ -1,0 +1,50 @@
+[
+  {
+    "product": {
+      "name": "Organic Cotton Oxford Shirt",
+      "material": "100% organic cotton (oxford weave)",
+      "fit": "Regular fit",
+      "color": "Light blue",
+      "sustainability": "Organic cotton; designed for durability",
+      "additional_details": "Button-down collar, subtle embroidered logo, machine washable"
+    },
+    "lang": "EN",
+    "copy": {
+      "short_description": "Elevate your wardrobe with our Light Blue Organic Cotton Oxford Shirt, crafted from 100% organic cotton for a refined, everyday look.",
+      "seo_description": "Discover the Light Blue Organic Cotton Oxford Shirt, made from 100% organic cotton in a classic oxford weave. This regular fit shirt features a button-down collar and a subtle embroidered logo, combining style and comfort. Designed for durability, it is machine washable for easy care. Perfect for both casual and formal occasions, this shirt embodies modern elegance with a sustainable touch.",
+      "features": [
+        "100% organic cotton in an oxford weave",
+        "Regular fit for a comfortable silhouette",
+        "Light blue color for versatile styling",
+        "Button-down collar for a polished look",
+        "Subtle embroidered logo adds a refined detail"
+      ],
+      "meta_title": "Organic Cotton Oxford Shirt - Light Blue",
+      "meta_description": "Shop our Light Blue Organic Cotton Oxford Shirt, crafted from 100% organic cotton. Durable, stylish, and machine washable for effortless care."
+    }
+  },
+  {
+    "product": {
+      "name": "Merino Wool Knit Sweater",
+      "material": "100% merino wool",
+      "fit": "Relaxed fit",
+      "color": "Sand",
+      "sustainability": "",
+      "additional_details": "Soft handfeel, ribbed cuffs and hem; recommend gentle cold wash"
+    },
+    "lang": "EN",
+    "copy": {
+      "short_description": "Elevate your wardrobe with our Merino Wool Knit Sweater in Sand. Crafted from 100% merino wool, it offers a relaxed fit and a soft handfeel for all-day comfort.",
+      "seo_description": "Discover the Merino Wool Knit Sweater, a perfect blend of style and comfort. Made from 100% merino wool, this relaxed fit sweater features ribbed cuffs and hem for a refined look. The soft handfeel ensures comfort, making it ideal for layering or wearing alone. Care is simple with a gentle cold wash recommendation. Elevate your everyday style with this essential piece.",
+      "features": [
+        "100% merino wool for a luxurious feel",
+        "Relaxed fit for effortless layering",
+        "Soft handfeel enhances comfort",
+        "Ribbed cuffs and hem for a refined finish",
+        "Recommended gentle cold wash for care"
+      ],
+      "meta_title": "Merino Wool Knit Sweater - Sand",
+      "meta_description": "Shop our Merino Wool Knit Sweater in Sand. Made from 100% merino wool with a relaxed fit and soft handfeel. Perfect for layering."
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "product": {
+      "name": "Organic Cotton Oxford Shirt",
+      "material": "100% organic cotton (oxford weave)",
+      "fit": "Regular fit",
+      "color": "Light blue",
+      "sustainability": "Organic cotton; designed for durability",
+      "additional_details": "Button-down collar, subtle embroidered logo, machine washable"
+    },
+    "lang": "DE",
+    "copy": {
+      "short_description": "Leichtes Oxford-Hemd aus 100% Bio-Baumwolle in Hellblau. Regular Fit mit klassischem Button-Down-Kragen.",
+      "seo_description": "Entdecken Sie unser Oxford-Hemd aus 100% Bio-Baumwolle. In einem eleganten Hellblau gehalten, bietet es einen Regular Fit und einen klassischen Button-Down-Kragen. Das Hemd ist mit einem dezenten, gestickten Logo versehen und maschinenwaschbar. Ideal für einen modernen, nachhaltigen Kleiderschrank, designed für Langlebigkeit und Komfort.",
+      "features": [
+        "100% Bio-Baumwolle im Oxford-Gewebe",
+        "Regular Fit für optimalen Tragekomfort",
+        "Klassischer Button-Down-Kragen",
+        "Subtil gesticktes Logo für einen eleganten Akzent",
+        "Maschinenwaschbar für einfache Pflege"
+      ],
+      "meta_title": "Bio-Baumwoll-Oxford-Hemd in Hellblau",
+      "meta_description": "Hochwertiges Oxford-Hemd aus 100% Bio-Baumwolle. Regular Fit, Button-Down-Kragen, maschinenwaschbar. Ideal für nachhaltige Mode."
+    }
+  },
+  {
+    "product": {
+      "name": "Merino Wool Knit Sweater",
+      "material": "100% merino wool",
+      "fit": "Relaxed fit",
+      "color": "Sand",
+      "sustainability": "",
+      "additional_details": "Soft handfeel, ribbed cuffs and hem; recommend gentle cold wash"
+    },
+    "lang": "DE",
+    "copy": {
+      "short_description": "Der Merino Wool Knit Sweater in Sand bietet einen entspannten Schnitt und ein weiches Tragegefühl.",
+      "seo_description": "Entdecken Sie den Merino Wool Knit Sweater in Sand. Hergestellt aus 100% Merinowolle, bietet dieser Pullover einen entspannten Schnitt und ein angenehmes Tragegefühl. Die gerippten Bündchen und der Saum verleihen ihm eine raffinierte Note. Ideal für lässige Anlässe, lässt sich dieser Pullover vielseitig kombinieren. Pflegehinweis: Schonende Kaltwäsche empfohlen.",
+      "features": [
+        "Material: 100% Merinowolle",
+        "Entspannter Schnitt für hohen Tragekomfort",
+        "Weiches Handgefühl für angenehmes Tragen",
+        "Gerippte Bündchen und Saum für eine raffinierte Optik",
+        "Pflegehinweis: Schonende Kaltwäsche empfohlen"
+      ],
+      "meta_title": "Merino Wool Knit Sweater - Sand",
+      "meta_description": "Der Merino Wool Knit Sweater in Sand bietet entspannten Schnitt und weiches Tragegefühl. Ideal für lässige Anlässe. Pflegehinweis: Kaltwäsche."
+    }
+  }
+]

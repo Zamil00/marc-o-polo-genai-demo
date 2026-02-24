@@ -63,6 +63,35 @@ Shipping within Germany typically takes 2–4 business days. If you have any fur
 
 1. Create virtual environment:
 
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate   # Mac
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Create .env file and add your OpenAI API key.
+
+4. Run:
+   python rag_support/main.py
+
+
+## Demo (Example)
+
+**Customer:** HOW LONG DOES SHIPPING TAKE IN GERMANY?
+
+**Assistant:**
+Shipping within Germany typically takes 2–4 business days. If you have any further questions or need assistance with your order, please feel free to reach out.
+
+
+## Module 2 — Product Description Generator (LLM)
+
+A structured prompt + workflow generating **brand-consistent, SEO-ready** product copy in **DE/EN**.
+
+Run:
+```bash
+python product_generator/cli.py --input product_generator/sample_products.json --lang DE
+python product_generator/cli.py --input product_generator/sample_products.json --lang EN
+```
+

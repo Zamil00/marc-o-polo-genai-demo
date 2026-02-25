@@ -263,7 +263,7 @@ automation_concept/architecture.png
 
 ---
 
-## Module 4 — Retail AI Studio (GenAI Experimentation Platform)
+# Module 4 — Retail AI Studio (GenAI Experimentation Platform)
 
 A Streamlit-based internal GenAI enablement platform simulating how a retail organization could operationalize Generative AI with governance, evaluation, and optimization layers.
 
@@ -383,7 +383,7 @@ http://localhost:8502
 
 ---
 
-## Module 6 — Enterprise Automation Orchestrator (FastAPI + CLI)
+# Module 6 — Enterprise Automation Orchestrator (FastAPI + CLI)
 
 A production-style automation runner simulating:
 - AI copy generation + visual prompt generation

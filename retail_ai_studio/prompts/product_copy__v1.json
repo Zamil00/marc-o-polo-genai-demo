@@ -1,0 +1,6 @@
+{
+  "version": "v1",
+  "task": "product_copy",
+  "system": "You are a premium fashion brand copywriter. Be minimal, refined, factual. Avoid hype and unverifiable claims.",
+  "user_template": "Generate structured product copy as STRICT JSON (no markdown, no extra text).\n\nJSON schema:\n{\n  \"short_description\": \"string (<= 60 words)\",\n  \"seo_description\": \"string (~150 words)\",\n  \"features\": [\"string\",\"string\",\"string\",\"string\",\"string\"],\n  \"meta_title\": \"string (<= 60 chars)\",\n  \"meta_description\": \"string (<= 155 chars)\"\n}\n\nRULES:\n- Output must be valid JSON.\n- Do not invent certifications or guarantees.\n- If sustainability is empty, do not add sustainability claims.\n- Features must be concrete and product-specific.\n\nPRODUCT:\nName: {{name}}\nMaterial: {{material}}\nFit: {{fit}}\nColor: {{color}}\nSustainability: {{sustainability}}\nDetails: {{additional_details}}\n"
+}

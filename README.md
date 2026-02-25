@@ -1,4 +1,16 @@
-# 🚀 Generative AI Prototypes – Fashion Retail Use Cases
+# 🚀 Enterprise-Grade Generative AI System Design for Fashion Retail
+
+A progressive suite of Generative AI prototypes evolving from isolated LLM use cases into a governed, multi-layer AI experimentation and automation platform for enterprise fashion retail.
+
+This repository demonstrates the transition from:
+
+- Simple prompt-based applications
+- To structured LLM pipelines
+- To evaluation-driven experimentation
+- To governance-aware AI systems
+- To orchestration-ready enterprise automation
+
+The objective is not just to use LLMs — but to simulate how Generative AI can be operationalized responsibly inside a retail organization.
 
 ## 🏗 Enterprise AI Architecture
 
@@ -6,9 +18,6 @@ This diagram illustrates the end-to-end governed AI workflow implemented across 
 
 ![Enterprise AI Architecture](docs/enterprise_ai_architecture.png)
 *End-to-end governed AI workflow simulating enterprise-grade GenAI operationalization.*
-
-A progressive set of Generative AI prototypes evolving from single-use LLM applications 
-to a governed internal AI experimentation platform for retail (e.g., Marc O’Polo context).
 
 The focus is on **real business value**, combining:
 
@@ -20,10 +29,21 @@ The focus is on **real business value**, combining:
 ---
 ## 🎯 Why This Repository Exists
 
-This project evolves from individual GenAI applications (RAG, structured copy generation)
-to a simulated internal AI platform with governance, evaluation, and optimization layers.
+
+- Ability to design Retrieval-Augmented Generation systems
+- Structured JSON-based LLM output enforcement
+- Prompt version control and evaluation scoring
+- Guardrail design for marketing & compliance safety
+- Token-level cost awareness
+- Human-in-the-loop approval modeling
+- API-based orchestration (FastAPI + CLI)
+- Experimentation UI (Streamlit)
+- End-to-end governance simulation
+
+This repository reflects enterprise-level AI system thinking — not isolated prompt engineering.
 
 The goal is to demonstrate not only LLM usage — but AI operationalization inside a retail organization.
+
 
 ## ⚡ Quick Demo (5 Minutes)
 
@@ -33,12 +53,14 @@ Want to see the governed AI workflow in action?
 
 pip install -r retail_ai_studio/requirements_extra.txt
 streamlit run retail_ai_studio/app.py --server.port 8501
+
 Open:
 http://localhost:8501
 
 Test case:
 - Add 100% Guaranteed to product name
 - Remove sustainability information
+- Enable Agent Mode
 
 Observe:
 - Risk score decrease

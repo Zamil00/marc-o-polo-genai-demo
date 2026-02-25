@@ -1,5 +1,12 @@
 # 🚀 Generative AI Prototypes – Fashion Retail Use Cases
 
+## 🏗 Enterprise AI Architecture
+
+This diagram illustrates the end-to-end governed AI workflow implemented across the modules, including risk scoring, approval gates, integrations, and logging.
+
+![Enterprise AI Architecture](docs/enterprise_ai_architecture.png)
+*End-to-end governed AI workflow simulating enterprise-grade GenAI operationalization.*
+
 A progressive set of Generative AI prototypes evolving from single-use LLM applications 
 to a governed internal AI experimentation platform for retail (e.g., Marc O’Polo context).
 
@@ -18,6 +25,38 @@ to a simulated internal AI platform with governance, evaluation, and optimizatio
 
 The goal is to demonstrate not only LLM usage — but AI operationalization inside a retail organization.
 
+## ⚡ Quick Demo (5 Minutes)
+
+Want to see the governed AI workflow in action?
+
+1️⃣ Governance & Agent Mode (Retail AI Studio)
+
+pip install -r retail_ai_studio/requirements_extra.txt
+streamlit run retail_ai_studio/app.py --server.port 8501
+Open:
+http://localhost:8501
+
+Test case:
+- Add 100% Guaranteed to product name
+- Remove sustainability information
+
+Observe:
+- Risk score decrease
+- Guardrail explanation
+- Automatic best-output selection
+
+
+2️⃣ Enterprise Automation API
+
+pip install -r automation_orchestrator/requirements_extra.txt
+uvicorn automation_orchestrator.api:app --reload --port 8010
+
+Open:
+http://127.0.0.1:8010/docs
+
+Trigger /run endpoint
+→ Observe governance gate & status transition
+
 ---
 
 ## ✅ Modules Overview
@@ -26,6 +65,30 @@ The goal is to demonstrate not only LLM usage — but AI operationalization insi
 - **Module 2 — Product Description Generator (DE/EN, SEO, JSON)**
 - **Module 3 — Automation Workflow Concept**
 - **Module 4 — Retail AI Studio (Governed GenAI Platform)**
+- **Module 5 — Visual AI Studio (Text-to-Image for Retail)**
+- **Module 6 — Enterprise Automation Orchestrator (FastAPI + CLI)**
+
+# ⚙️ Setup (All Modules)
+
+## 1️⃣ Create virtual environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## 2️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 3️⃣ Create `.env` file in repo root
+
+```bash
+OPENAI_API_KEY=your_api_key_here
+```
+> Note: Do not commit `.env`. Use `.env.example` for sharing config templates.
 
 ---
 
@@ -68,6 +131,12 @@ HOW LONG DOES SHIPPING TAKE IN GERMANY?
 **Assistant:**  
 Shipping within Germany typically takes 2–4 business days.
 
+---
+## Run (from repo root)
+```bash
+cd rag_support
+python3 main.py
+```
 ---
 
 # Module 2 — Product Description Generator (LLM)
@@ -143,38 +212,32 @@ New product created
 - Operational workload reduction  
 
 ---
+## Run
 
-# 🛠 Tech Stack
+This module is a documented architecture concept.
 
-- Python  
-- OpenAI API  
-- NumPy  
-- python-dotenv  
-- Modular architecture design  
-- Structured JSON validation  
+See:
+
+automation_concept/workflow.md
+
+automation_concept/architecture.png
 
 ---
 
-# ⚙️ Setup (All Modules)
+# 🛠 Tech Stack
 
-## 1️⃣ Create virtual environment
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-## 2️⃣ Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-## 3️⃣ Create `.env` file in repo root
-
-```bash
-OPENAI_API_KEY=your_api_key_here
-```
+- Python
+- OpenAI API
+- FastAPI
+- Uvicorn
+- Streamlit
+- Pydantic
+- NumPy
+- SQLite
+- python-dotenv
+- tiktoken
+- Modular architecture design
+- Structured JSON validation
 
 ---
 
@@ -224,6 +287,16 @@ User Input
 → Cost Estimation  
 → Agent Auto-Selection  
 → SQLite Logging  
+
+---
+## Run(from repo root)
+```bash
+pip install -r retail_ai_studio/requirements_extra.txt
+streamlit run retail_ai_studio/app.py --server.port 8501
+```
+Then open:
+
+http://localhost:8501
 
 ---
 
@@ -277,66 +350,61 @@ If risk is detected:
 This simulates responsible AI usage in enterprise environments.
 
 ---
-
-# ▶️ Run
-
-## Module 1
-
-```bash
-cd rag_support
-python3 main.py
-```
-
-## Module 2
-
-```bash
-python3 product_generator/cli.py --input product_generator/sample_products.json --lang DE
-```
-
-## Module 3 
-
-This module is a documented architecture concept.
-
-See:
-
-automation_concept/workflow.md
-
-automation_concept/architecture.png
-
-## Module 4
-
-```bash
-pip install -r retail_ai_studio/requirements_extra.txt
-streamlit run retail_ai_studio/app.py
-```
-Then open:
-
-http://localhost:8501
-
-## Module 5
-
-From repo root:
-
+## Run(from repo root)
 ```bash
 pip install -r visual_ai_studio/requirements_extra.txt
-streamlit run visual_ai_studio/app.py
+streamlit run visual_ai_studio/app.py --server.port 8502
 ```
 Then open:
 
-http://localhost:8501
+http://localhost:8502
 
 ---
 
+## Module 6 — Enterprise Automation Orchestrator (FastAPI + CLI)
+
+A production-style automation runner simulating:
+- AI copy generation + visual prompt generation
+- governance gates + cost estimates
+- optional Notion draft + Slack notification
+- approval workflow + SQLite logging
+
+### Run (API)
+```bash
+pip install -r automation_orchestrator/requirements_extra.txt
+uvicorn automation_orchestrator.api:app --reload --port 8010
+```
+
+### Run (CLI)
+```bash
+pip install -r automation_orchestrator/requirements_extra.txt
+python3 automation_orchestrator/cli.py --input automation_orchestrator/sample_product.json --approve pending --dry-run
+```
+
+Endpoints:
+
+http://127.0.0.1:8010/health
+
+http://127.0.0.1:8010/docs
+
+POST http://127.0.0.1:8010/run
+
+---
 
 # 🎯 Positioning
 
-These prototypes demonstrate:
+🧠 What This Repository Demonstrates
 
-- Practical RAG implementation  
-- Structured LLM prompting  
-- Multilingual generation  
-- Business-oriented AI automation thinking  
-- Governance-aware AI integration  
+This project simulates how a retail organization could:
 
-This repository demonstrates the transition from prompt-based prototypes
-to governance-aware GenAI system design — reflecting enterprise-level AI thinking.
+- Move from isolated LLM experiments
+- To governed AI systems
+- To API-based orchestration
+- To production-ready automation pipelines
+
+It reflects:
+
+- Applied AI engineering
+- Responsible AI design
+- Enterprise governance thinking
+- Measurable business alignment

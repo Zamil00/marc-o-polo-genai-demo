@@ -227,6 +227,57 @@ User Input
 
 ---
 
+# Module 5 — Visual AI Studio (Text-to-Image for Fashion Retail)
+
+A Streamlit-based **Visual AI experimentation module** demonstrating how generative image models can be integrated into fashion marketing and design workflows.
+
+This module simulates how marketing or design teams could generate product visuals using brand-consistent prompts — with governance-aware safety checks.
+
+---
+
+## 🎯 Use Case
+
+Product JSON  
+→ Brand-aligned visual prompt (v1 / v2)  
+→ Image generation via OpenAI Images API  
+→ Governance check (risky claims detection)  
+→ Saved artifacts & reproducible outputs  
+
+Designed for:
+- Marketing content prototyping  
+- Visual experimentation  
+- Campaign concept development  
+- Faster design iteration  
+
+---
+
+## 🧠 What It Demonstrates
+
+- Prompt versioning for visual generation  
+- Text-to-image generation (`gpt-image-1.5`, `dall-e-3`)  
+- Governance scoring for risky marketing claims  
+- Structured, reproducible output saving  
+- Enterprise-style AI experimentation workflow  
+
+---
+
+## 🔍 Governance Layer
+
+Before generating images, the system evaluates:
+
+- Risky marketing claims (e.g., “100% Guaranteed”)  
+- Missing sustainability information  
+- Potential certification overclaims  
+
+If risk is detected:
+- The visual prompt is automatically constrained  
+- Risk score is shown in UI  
+- Metadata is logged  
+
+This simulates responsible AI usage in enterprise environments.
+
+---
+
 # ▶️ Run
 
 ## Module 1
@@ -257,6 +308,18 @@ automation_concept/architecture.png
 ```bash
 pip install -r retail_ai_studio/requirements_extra.txt
 streamlit run retail_ai_studio/app.py
+```
+Then open:
+
+http://localhost:8501
+
+## Module 5
+
+From repo root:
+
+```bash
+pip install -r visual_ai_studio/requirements_extra.txt
+streamlit run visual_ai_studio/app.py
 ```
 Then open:
 

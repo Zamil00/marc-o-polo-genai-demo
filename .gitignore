@@ -8,3 +8,5 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
+visual_ai_studio/out/*
+!visual_ai_studio/out/.gitkeep

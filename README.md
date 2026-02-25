@@ -1,6 +1,7 @@
 # 🚀 Generative AI Prototypes – Fashion Retail Use Cases
 
-A set of practical Generative AI prototypes inspired by modern fashion retail workflows (e.g., Marc O’Polo context).
+A progressive set of Generative AI prototypes evolving from single-use LLM applications 
+to a governed internal AI experimentation platform for retail (e.g., Marc O’Polo context).
 
 The focus is on **real business value**, combining:
 
@@ -10,12 +11,21 @@ The focus is on **real business value**, combining:
 - Governance & measurable KPIs
 
 ---
+## 🎯 Why This Repository Exists
+
+This project evolves from individual GenAI applications (RAG, structured copy generation)
+to a simulated internal AI platform with governance, evaluation, and optimization layers.
+
+The goal is to demonstrate not only LLM usage — but AI operationalization inside a retail organization.
+
+---
 
 ## ✅ Modules Overview
 
 - **Module 1 — RAG Fashion Support Assistant**
 - **Module 2 — Product Description Generator (DE/EN, SEO, JSON)**
 - **Module 3 — Automation Workflow Concept**
+- **Module 4 — Retail AI Studio (Governed GenAI Platform)**
 
 ---
 
@@ -168,6 +178,55 @@ OPENAI_API_KEY=your_api_key_here
 
 ---
 
+## Module 4 — Retail AI Studio (GenAI Experimentation Platform)
+
+A Streamlit-based internal GenAI enablement platform simulating how a retail organization could operationalize Generative AI with governance, evaluation, and optimization layers.
+
+This module demonstrates:
+
+- Prompt versioning (v1 vs v2)
+- Structured JSON validation (Pydantic)
+- Guardrails (brand safety & claim detection)
+- Token & cost estimation
+- SQLite logging of runs
+- Agent Mode (automatic best-output selection)
+
+---
+
+### 🔍 Governance Demonstration
+
+The system evaluates both **input risk** and **output compliance**.
+
+Example test:
+
+- Set product name to include: `100% Guaranteed`
+- Leave sustainability empty
+
+The evaluation engine will:
+
+- Detect risky marketing language in input
+- Penalize overclaiming language in output
+- Downscore policy violations
+- Automatically select the safest/highest-scoring result
+
+This simulates enterprise-grade AI governance.
+
+---
+
+### 🧠 Architecture Overview
+
+User Input  
+→ Prompt Template (v1 / v2)  
+→ LLM Call (model selectable)  
+→ JSON Schema Validation  
+→ Guardrail Check  
+→ Scoring Engine  
+→ Cost Estimation  
+→ Agent Auto-Selection  
+→ SQLite Logging  
+
+---
+
 # ▶️ Run
 
 ## Module 1
@@ -192,7 +251,19 @@ See:
 automation_concept/workflow.md
 
 automation_concept/architecture.png
+
+## Module 4
+
+```bash
+pip install -r retail_ai_studio/requirements_extra.txt
+streamlit run retail_ai_studio/app.py
+```
+Then open:
+
+http://localhost:8501
+
 ---
+
 
 # 🎯 Positioning
 
@@ -204,4 +275,5 @@ These prototypes demonstrate:
 - Business-oriented AI automation thinking  
 - Governance-aware AI integration  
 
-Designed as a realistic showcase of how Generative AI can be embedded into fashion retail operations.
+This repository demonstrates the transition from prompt-based prototypes
+to governance-aware GenAI system design — reflecting enterprise-level AI thinking.
